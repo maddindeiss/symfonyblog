@@ -157,6 +157,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
         not_app_about:
 
+        // app_contact
+        if ($pathinfo === '/contact') {
+            if (!in_array($this->context->getMethod(), array('GET', 'POST', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'POST', 'HEAD'));
+                goto not_app_contact;
+            }
+
+            return array (  '_controller' => 'AppBundle\\Controller\\PageController::contactAction',  '_route' => 'app_contact',);
+        }
+        not_app_contact:
+
         // app_hello
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_hello')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',));
