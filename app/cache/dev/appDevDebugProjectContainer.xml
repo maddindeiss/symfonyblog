@@ -25,8 +25,8 @@
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_driver">pdo_mysql</parameter>
-    <parameter key="database_host">127.0.0.1</parameter>
-    <parameter key="database_port">null</parameter>
+    <parameter key="database_host">localhost</parameter>
+    <parameter key="database_port">3306</parameter>
     <parameter key="database_name">symfonyblog</parameter>
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">test1234</parameter>
@@ -451,7 +451,7 @@
     <parameter key="assetic.write_to">/Volumes/Data/martindeiss/Documents/SymfonyBlog/symfonyblog/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
-    <parameter key="assetic.node.bin">/usr/local/bin/node</parameter>
+    <parameter key="assetic.node.bin">/usr/bin/node</parameter>
     <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
@@ -1767,7 +1767,7 @@
       <argument type="collection">
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>54cf5e722c3cc</argument>
+            <argument>54cf88fe7e575</argument>
           </service>
         </argument>
       </argument>
@@ -1886,7 +1886,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-            <argument>54cf5e722c3cc</argument>
+            <argument>54cf88fe7e575</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2253,8 +2253,8 @@
     <service id="doctrine.dbal.default_connection" class="Doctrine\DBAL\Connection" factory-method="createConnection" factory-service="doctrine.dbal.connection_factory">
       <argument type="collection">
         <argument key="driver">pdo_mysql</argument>
-        <argument key="host">127.0.0.1</argument>
-        <argument key="port">null</argument>
+        <argument key="host">localhost</argument>
+        <argument key="port">3306</argument>
         <argument key="dbname">symfonyblog</argument>
         <argument key="user">root</argument>
         <argument key="password">test1234</argument>
@@ -2768,6 +2768,10 @@
       <call method="addPath">
         <argument>/Volumes/Data/martindeiss/Documents/SymfonyBlog/symfonyblog/vendor/doctrine/doctrine-bundle/Resources/views</argument>
         <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Volumes/Data/martindeiss/Documents/SymfonyBlog/symfonyblog/src/AppBundle/Resources/views</argument>
+        <argument>App</argument>
       </call>
       <call method="addPath">
         <argument>/Volumes/Data/martindeiss/Documents/SymfonyBlog/symfonyblog/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
