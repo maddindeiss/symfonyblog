@@ -17,4 +17,11 @@ class PageController extends Controller
     {
         return $this->render('AppBundle::index.html.twig');
     }
+
+    public function aboutAction()
+    {
+        return $this->render('AppBundle:Page:about.html.twig');
+
+    }
+
 }

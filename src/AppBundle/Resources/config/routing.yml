@@ -4,10 +4,16 @@ app_homepage:
     requirements:
         _method:  GET
 
-app_homepage:
+app_about:
+    pattern:  /about/
+    defaults: { _controller: AppBundle:Page:about }
+    requirements:
+        _method:  GET
+
+app_hello:
   pattern: /hello/{name}
   defaults: {_controller: AppBundle:Default:index}
 
-app_homepage_test:
+app_test:
   pattern: /test/{name}
   defaults: {_controller: AppBundle:MyController:test}

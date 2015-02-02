@@ -142,9 +142,29 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
         not_app_homepage:
 
-        // app_homepage_test
+        // app_about
+        if (rtrim($pathinfo, '/') === '/about') {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_app_about;
+            }
+
+            if (substr($pathinfo, -1) !== '/') {
+                return $this->redirect($pathinfo.'/', 'app_about');
+            }
+
+            return array (  '_controller' => 'AppBundle\\Controller\\PageController::aboutAction',  '_route' => 'app_about',);
+        }
+        not_app_about:
+
+        // app_hello
+        if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_hello')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',));
+        }
+
+        // app_test
         if (0 === strpos($pathinfo, '/test') && preg_match('#^/test/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_homepage_test')), array (  '_controller' => 'AppBundle\\Controller\\MyControllerController::testAction',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_test')), array (  '_controller' => 'AppBundle\\Controller\\MyControllerController::testAction',));
         }
 
         throw 0 < count($allow) ? new MethodNotAllowedException(array_unique($allow)) : new ResourceNotFoundException();
