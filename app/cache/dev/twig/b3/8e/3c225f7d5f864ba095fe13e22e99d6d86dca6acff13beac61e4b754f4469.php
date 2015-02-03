@@ -144,7 +144,7 @@ class __TwigTemplate_b38e3c225f7d5f864ba095fe13e22e99d6d86dca6acff13beac61e4b754
     {
         echo "<a href=\"";
         echo $this->env->getExtension('routing')->getPath("app_homepage");
-        echo "\">symblog</a>";
+        echo "\">Voll Cooler Blog</a>";
     }
 
     // line 35

@@ -20,7 +20,16 @@ class PageController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('AppBundle::index.html.twig');
+        $em = $this->getDoctrine()
+            ->getEntityManager();
+
+        $blogs = $em->getRepository('AppBundle:Blog')
+            ->getLatestBlogs();
+
+        return $this->render('AppBundle::index.html.twig', array(
+            'blogs' => $blogs
+        ));
+
     }
 
     public function aboutAction()
