@@ -9,6 +9,13 @@
 
 namespace AppBundle\Entity;
 
+use Symfony\Component\Validator\Mapping\ClassMetadata;
+use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\Email;
+use Symfony\Component\Validator\Constraints\Length;
+
+
+
 class Enquiry
 {
     protected $name;
@@ -58,4 +65,20 @@ class Enquiry
     {
         $this->body = $body;
     }
+
+
+    public static function loadValidatorMetadata(ClassMetadata $metadata)
+    {
+        $metadata->addPropertyConstraint('name', new NotBlank());
+
+        $metadata->addPropertyConstraint('email', new Email(array(
+            'message' => 'symblog does not like invalid emails. Give me a real one!'
+        )));
+
+        $metadata->addPropertyConstraint('subject', new NotBlank());
+        $metadata->addPropertyConstraint('subject', new Length(array('max' => 50)));
+
+        $metadata->addPropertyConstraint('body', new Length(array('min' => 5, 'minMessage' => 'Zu wenig Zeichen. Mindestens {{ limit }}')));
+    }
+
 }
