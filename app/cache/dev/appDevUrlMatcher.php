@@ -168,6 +168,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
         not_app_contact:
 
+        // app_blog_show
+        if (preg_match('#^/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+            if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
+                $allow = array_merge($allow, array('GET', 'HEAD'));
+                goto not_app_blog_show;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_blog_show')), array (  '_controller' => 'AppBundle\\Controller\\BlogController::showAction',));
+        }
+        not_app_blog_show:
+
         // app_hello
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_hello')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',));

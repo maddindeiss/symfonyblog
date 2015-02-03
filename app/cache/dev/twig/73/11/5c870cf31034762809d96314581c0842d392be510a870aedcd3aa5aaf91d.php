@@ -162,7 +162,7 @@ class __TwigTemplate_73115c870cf31034762809d96314581c0842d392be510a870aedcd3aa5a
                         tbody.appendChild(rows);
 
                         if (infoSpan) {
-                            var text = requestStack.length + ' calls';
+                            var text = requestStack.length + ' call' + (requestStack.length > 1 ? 's' : '');
                             infoSpan.textContent = text;
                         }
                     } else {

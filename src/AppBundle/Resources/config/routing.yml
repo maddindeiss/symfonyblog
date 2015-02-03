@@ -10,12 +10,20 @@ app_about:
     requirements:
         _method:  GET
 
-
 app_contact:
     pattern:  /contact
     defaults: { _controller: AppBundle:Page:contact }
     requirements:
         _method:  GET|POST
+
+
+app_blog_show:
+    pattern:  /{id}
+    defaults: { _controller: AppBundle:Blog:show }
+    requirements:
+        _method:  GET
+        id: \d+
+
 
 app_hello:
   pattern: /hello/{name}
