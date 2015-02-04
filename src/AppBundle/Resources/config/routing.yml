@@ -24,6 +24,12 @@ app_blog_show:
         _method:  GET
         id: \d+
 
+app_comment_create:
+    pattern:  /comment/{blog_id}
+    defaults: { _controller: AppBundle:Comment:create }
+    requirements:
+        _method:  POST
+        blog_id: \d+
 
 app_hello:
   pattern: /hello/{name}

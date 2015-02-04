@@ -10,6 +10,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\Common\Collections\ArrayCollection;
 
 /**
  * @ORM\Entity(repositoryClass="AppBundle\Entity\Repository\BlogRepository")
@@ -73,8 +74,6 @@ class Blog
         $this->setCreated(new \DateTime());
         $this->setUpdated(new \DateTime());
     }
-
-
 
     /**
      * Get id

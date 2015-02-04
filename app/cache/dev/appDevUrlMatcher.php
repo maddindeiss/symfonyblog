@@ -179,6 +179,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
         not_app_blog_show:
 
+        // app_comment_create
+        if (0 === strpos($pathinfo, '/comment') && preg_match('#^/comment/(?P<blog_id>\\d+)$#s', $pathinfo, $matches)) {
+            if ($this->context->getMethod() != 'POST') {
+                $allow[] = 'POST';
+                goto not_app_comment_create;
+            }
+
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_comment_create')), array (  '_controller' => 'AppBundle:Comment:create',));
+        }
+        not_app_comment_create:
+
         // app_hello
         if (0 === strpos($pathinfo, '/hello') && preg_match('#^/hello/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
             return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_hello')), array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',));
