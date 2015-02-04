@@ -74,7 +74,12 @@ class __TwigTemplate_b878c3fa1b74aecba31faecb541e1ca30051fc9f47a457a8f760b29387a
             </div>
 
             <footer class=\"meta\">
-                <p>Comments: -</p>
+                <p>Comments: <a href=\"";
+            // line 19
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("app_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()))), "html", null, true);
+            echo "#comments\">";
+            echo twig_escape_filter($this->env, twig_length_filter($this->env, $this->getAttribute($context["blog"], "comments", array())), "html", null, true);
+            echo "</a></p>
                 <p>Posted by <span class=\"highlight\">";
             // line 20
             echo twig_escape_filter($this->env, $this->getAttribute($context["blog"], "author", array()), "html", null, true);
@@ -112,6 +117,6 @@ class __TwigTemplate_b878c3fa1b74aecba31faecb541e1ca30051fc9f47a457a8f760b29387a
 
     public function getDebugInfo()
     {
-        return array (  95 => 25,  86 => 21,  80 => 20,  72 => 15,  68 => 14,  63 => 12,  55 => 9,  48 => 7,  45 => 6,  39 => 5,  36 => 4,  11 => 2,);
+        return array (  100 => 25,  91 => 21,  85 => 20,  79 => 19,  72 => 15,  68 => 14,  63 => 12,  55 => 9,  48 => 7,  45 => 6,  39 => 5,  36 => 4,  11 => 2,);
     }
 }

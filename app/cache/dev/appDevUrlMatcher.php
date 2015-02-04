@@ -186,7 +186,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 goto not_app_comment_create;
             }
 
-            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_comment_create')), array (  '_controller' => 'AppBundle:Comment:create',));
+            return $this->mergeDefaults(array_replace($matches, array('_route' => 'app_comment_create')), array (  '_controller' => 'AppBundle\\Controller\\CommentController::createAction',));
         }
         not_app_comment_create:
 

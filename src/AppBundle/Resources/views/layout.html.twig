@@ -4,8 +4,9 @@
 {% block stylesheets %}
     {{ parent() }}
     <link href="{{ asset('bundles/app/css/blog.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ asset('bundles/app/css/sidebar.css') }}" type="text/css" rel="stylesheet" />
 {% endblock %}
 
 {% block sidebar %}
-    Sidebar content
+    {% render(controller("AppBundle:Page:sidebar")) %}
 {% endblock %}

@@ -72,4 +72,26 @@ class PageController extends Controller
         ));
 
     }
+
+    public function sidebarAction()
+    {
+        $em = $this->getDoctrine()
+            ->getEntityManager();
+
+        $tags = $em->getRepository('AppBundle:Blog')
+            ->getTags();
+
+        $tagWeights = $em->getRepository('AppBundle:Blog')
+            ->getTagWeights($tags);
+
+        $commentLimit   = $this->container
+            ->getParameter('app.comments.latest_comment_limit');
+        $latestComments = $em->getRepository('AppBundle:Comment')
+            ->getLatestComments($commentLimit);
+
+        return $this->render('AppBundle:Page:sidebar.html.twig', array(
+            'latestComments'    => $latestComments,
+            'tags'              => $tagWeights
+        ));
+    }
 }

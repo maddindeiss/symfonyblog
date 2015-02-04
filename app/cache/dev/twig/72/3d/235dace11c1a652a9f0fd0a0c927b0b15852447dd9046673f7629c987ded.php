@@ -44,15 +44,19 @@ class __TwigTemplate_723d235dace11c1a652a9f0fd0a0c927b0b15852447dd9046673f7629c9
         // line 6
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/app/css/blog.css"), "html", null, true);
         echo "\" type=\"text/css\" rel=\"stylesheet\" />
+    <link href=\"";
+        // line 7
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("bundles/app/css/sidebar.css"), "html", null, true);
+        echo "\" type=\"text/css\" rel=\"stylesheet\" />
 ";
     }
 
-    // line 9
+    // line 10
     public function block_sidebar($context, array $blocks = array())
     {
-        // line 10
-        echo "    Sidebar content
-";
+        // line 11
+        echo "    ";
+        echo $this->env->getExtension('actions')->renderUri($this->env->getExtension('http_kernel')->controller("AppBundle:Page:sidebar"), array());
     }
 
     public function getTemplateName()
@@ -67,6 +71,6 @@ class __TwigTemplate_723d235dace11c1a652a9f0fd0a0c927b0b15852447dd9046673f7629c9
 
     public function getDebugInfo()
     {
-        return array (  54 => 10,  51 => 9,  45 => 6,  40 => 5,  37 => 4,  11 => 2,);
+        return array (  58 => 11,  55 => 10,  49 => 7,  45 => 6,  40 => 5,  37 => 4,  11 => 2,);
     }
 }
