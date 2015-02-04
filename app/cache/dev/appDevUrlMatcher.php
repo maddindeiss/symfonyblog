@@ -27,6 +27,72 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         $context = $this->context;
         $request = $this->request;
 
+        if (0 === strpos($pathinfo, '/css')) {
+            // _assetic_51c56cc
+            if ($pathinfo === '/css/51c56cc.css') {
+                return array (  '_controller' => 'assetic.controller:render',  'name' => '51c56cc',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_51c56cc',);
+            }
+
+            if (0 === strpos($pathinfo, '/css/blogger')) {
+                // _assetic_47948a3
+                if ($pathinfo === '/css/blogger.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => '47948a3',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_47948a3',);
+                }
+
+                if (0 === strpos($pathinfo, '/css/blogger_part_1_')) {
+                    // _assetic_47948a3_0
+                    if ($pathinfo === '/css/blogger_part_1_blog_1.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '47948a3',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_47948a3_0',);
+                    }
+
+                    if (0 === strpos($pathinfo, '/css/blogger_part_1_s')) {
+                        // _assetic_47948a3_1
+                        if ($pathinfo === '/css/blogger_part_1_screen_2.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '47948a3',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_47948a3_1',);
+                        }
+
+                        // _assetic_47948a3_2
+                        if ($pathinfo === '/css/blogger_part_1_sidebar_3.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '47948a3',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_47948a3_2',);
+                        }
+
+                    }
+
+                }
+
+            }
+
+            if (0 === strpos($pathinfo, '/css/4fe151e')) {
+                // _assetic_4fe151e
+                if ($pathinfo === '/css/4fe151e.css') {
+                    return array (  '_controller' => 'assetic.controller:render',  'name' => '4fe151e',  'pos' => NULL,  '_format' => 'css',  '_route' => '_assetic_4fe151e',);
+                }
+
+                if (0 === strpos($pathinfo, '/css/4fe151e_part_1_')) {
+                    // _assetic_4fe151e_0
+                    if ($pathinfo === '/css/4fe151e_part_1_blog_1.css') {
+                        return array (  '_controller' => 'assetic.controller:render',  'name' => '4fe151e',  'pos' => 0,  '_format' => 'css',  '_route' => '_assetic_4fe151e_0',);
+                    }
+
+                    if (0 === strpos($pathinfo, '/css/4fe151e_part_1_s')) {
+                        // _assetic_4fe151e_1
+                        if ($pathinfo === '/css/4fe151e_part_1_screen_2.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '4fe151e',  'pos' => 1,  '_format' => 'css',  '_route' => '_assetic_4fe151e_1',);
+                        }
+
+                        // _assetic_4fe151e_2
+                        if ($pathinfo === '/css/4fe151e_part_1_sidebar_3.css') {
+                            return array (  '_controller' => 'assetic.controller:render',  'name' => '4fe151e',  'pos' => 2,  '_format' => 'css',  '_route' => '_assetic_4fe151e_2',);
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
         if (0 === strpos($pathinfo, '/_')) {
             // _wdt
             if (0 === strpos($pathinfo, '/_wdt') && preg_match('#^/_wdt/(?P<token>[^/]++)$#s', $pathinfo, $matches)) {
@@ -169,7 +235,7 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         not_app_contact:
 
         // app_blog_show
-        if (preg_match('#^/(?P<id>\\d+)$#s', $pathinfo, $matches)) {
+        if (preg_match('#^/(?P<id>\\d+)/(?P<slug>[^/]++)$#s', $pathinfo, $matches)) {
             if (!in_array($this->context->getMethod(), array('GET', 'HEAD'))) {
                 $allow = array_merge($allow, array('GET', 'HEAD'));
                 goto not_app_blog_show;

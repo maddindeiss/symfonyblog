@@ -46,7 +46,7 @@ class __TwigTemplate_eac590a52096290cdb68bd92bd8708a12e95b3bd17f8d71f99e7c6f48f5
             echo "</span> commented <time datetime=\"";
             echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["comment"], "created", array()), "c"), "html", null, true);
             echo "\">";
-            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["comment"], "created", array()), "l, F j, Y"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('blog_extension')->createdAgo($this->getAttribute($context["comment"], "created", array())), "html", null, true);
             echo "</time></p>
         </header>
         <p>";

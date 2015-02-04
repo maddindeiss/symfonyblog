@@ -1,0 +1,8 @@
+parameters:
+#    app.example.class: AppBundle\Example
+
+services:
+    blog.twig.extension:
+        class: AppBundle\Twig\Extensions\BlogExtension
+        tags:
+            - { name: twig.extension }

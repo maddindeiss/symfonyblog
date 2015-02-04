@@ -18,7 +18,7 @@ app_contact:
 
 
 app_blog_show:
-    pattern:  /{id}
+    pattern:  /{id}/{slug}
     defaults: { _controller: AppBundle:Blog:show }
     requirements:
         _method:  GET

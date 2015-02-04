@@ -52,7 +52,7 @@ class __TwigTemplate_b878c3fa1b74aecba31faecb541e1ca30051fc9f47a457a8f760b29387a
             <header>
                 <h2><a href=\"";
             // line 9
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("app_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("app_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()), "slug" => $this->getAttribute($context["blog"], "slug", array()))), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["blog"], "title", array()), "html", null, true);
             echo "</a></h2>
@@ -69,14 +69,14 @@ class __TwigTemplate_b878c3fa1b74aecba31faecb541e1ca30051fc9f47a457a8f760b29387a
             echo "</p>
                 <p class=\"continue\"><a href=\"";
             // line 15
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("app_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("app_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()), "slug" => $this->getAttribute($context["blog"], "slug", array()))), "html", null, true);
             echo "\">Continue reading...</a></p>
             </div>
 
             <footer class=\"meta\">
                 <p>Comments: <a href=\"";
             // line 19
-            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("app_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()))), "html", null, true);
+            echo twig_escape_filter($this->env, $this->env->getExtension('routing')->getPath("app_blog_show", array("id" => $this->getAttribute($context["blog"], "id", array()), "slug" => $this->getAttribute($context["blog"], "slug", array()))), "html", null, true);
             echo "#comments\">";
             echo twig_escape_filter($this->env, twig_length_filter($this->env, $this->getAttribute($context["blog"], "comments", array())), "html", null, true);
             echo "</a></p>
