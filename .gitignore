@@ -1,2 +1,4 @@
 
 app/config/parameters.yml
+
+app/phpunit.xml

@@ -30,6 +30,8 @@ return array(
     'Doctrine\\Bundle\\MigrationsBundle' => array($vendorDir . '/doctrine/doctrine-migrations-bundle'),
     'Doctrine\\Bundle\\FixturesBundle' => array($vendorDir . '/doctrine/doctrine-fixtures-bundle'),
     'Doctrine\\Bundle\\DoctrineCacheBundle' => array($vendorDir . '/doctrine/doctrine-cache-bundle'),
+    'Behat\\Gherkin' => array($vendorDir . '/behat/gherkin/src'),
+    'Behat\\Behat' => array($vendorDir . '/behat/behat/src'),
     'Assetic' => array($vendorDir . '/kriswallsmith/assetic/src'),
     '' => array($baseDir . '/src'),
 );

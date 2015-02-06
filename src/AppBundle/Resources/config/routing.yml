@@ -5,7 +5,7 @@ app_homepage:
         _method:  GET
 
 app_about:
-    pattern:  /about/
+    pattern:  /about
     defaults: { _controller: AppBundle:Page:about }
     requirements:
         _method:  GET

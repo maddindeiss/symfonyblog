@@ -22,7 +22,9 @@
         "doctrine/data-fixtures" : "dev-master",
         "doctrine/doctrine-migrations-bundle": "dev-master",
         "doctrine/migrations": "dev-master",
-        "phpunit/phpunit": "4.4.*"
+        "phpunit/phpunit": "4.4.*",
+        "behat/behat": "2.5.*@stable"
+        
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

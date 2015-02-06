@@ -1,0 +1,131 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset='utf-8"'>
+<title>About - symblog</title>
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]--><link href="http://fonts.googleapis.com/css?family=Irish+Grover" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=La+Belle+Aurore" rel="stylesheet" type="text/css">
+<link href="/css/blogger_part_1_blog_1.css" rel="stylesheet" media="screen">
+<link href="/css/blogger_part_1_screen_2.css" rel="stylesheet" media="screen">
+<link href="/css/blogger_part_1_sidebar_3.css" rel="stylesheet" media="screen">
+<link rel="shortcut icon" href="/favicon.ico">
+</head>
+<body>
+
+<section id="wrapper"><header id="header"><div class="top">
+                            <nav><ul class="navigation">
+<li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul></nav>
+</div>
+
+        <hgroup><h2><a href="/">Voll Cooler Blog</a></h2>
+            <h3><a href="/">creating a blog in Symfony2</a></h3>
+        </hgroup></header><section class="main-col"><header><h1>About symblog</h1>
+    </header><article><p>Donec imperdiet ante sed diam consequat et dictum erat faucibus. Aliquam sit
+            amet vehicula leo. Morbi urna dui, tempor ac posuere et, rutrum at dui.
+            Curabitur neque quam, ultricies ut imperdiet id, ornare varius arcu. Ut congue
+            urna sit amet tellus malesuada nec elementum risus molestie. Donec gravida
+            tellus sed tortor adipiscing fringilla. Donec nulla mauris, mollis egestas
+            condimentum laoreet, lacinia vel lorem. Morbi vitae justo sit amet felis
+            vehicula commodo a placerat lacus. Mauris at est elit, nec vehicula urna. Duis a
+            lacus nisl. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae.</p>
+    </article></section><aside class="sidebar"><section class="section"><header><h3>Tag Cloud</h3>
+    </header><p class="tags">
+                <span class="weight-1">symfony2</span>
+                <span class="weight-1">php</span>
+                <span class="weight-1">magic</span>
+                <span class="weight-1">dead</span>
+                <span class="weight-1">alive</span>
+                <span class="weight-1">leaky</span>
+                <span class="weight-1">binary</span>
+                <span class="weight-1">daftpunk</span>
+                <span class="weight-1">paradise</span>
+                <span class="weight-1">!trusting</span>
+                <span class="weight-1">misdirection</span>
+                <span class="weight-1">one</span>
+                <span class="weight-5">symblog</span>
+                <span class="weight-1">pool</span>
+                <span class="weight-1">hacked</span>
+                <span class="weight-1">grid</span>
+                <span class="weight-1">zero</span>
+                <span class="weight-4">movie</span>
+                <span class="weight-2">hacking</span>
+        </p></section><section class="section"><header><h3>Latest Comments</h3>
+    </header><article class="comment"><header><p class="small"><span class="highlight">Gary</span> commented on
+                    <a href="/20/you-re-either-a-one-or-a-zero-alive-or-dead#comment-33">
+                        You're either a one or a zero. Alive or dead
+                    </a>
+                    <em><time datetime="2015-02-04T15:13:12+01:00">19 hours ago</time></em>
+                </p>
+            </header><p>Bill Who?</p>
+        </article><article class="comment"><header><p class="small"><span class="highlight">Mile</span> commented on
+                    <a href="/20/you-re-either-a-one-or-a-zero-alive-or-dead#comment-32">
+                        You're either a one or a zero. Alive or dead
+                    </a>
+                    <em><time datetime="2015-02-04T15:13:12+01:00">19 hours ago</time></em>
+                </p>
+            </header><p>Doesn't Bill Gates have something like that?</p>
+        </article><article class="comment"><header><p class="small"><span class="highlight">Gabriel</span> commented on
+                    <a href="/18/misdirection-what-the-eyes-see-and-the-ears-hear-the-mind-believes#comment-31">
+                        Misdirection. What the eyes see and the ears hear, the mind believes
+                    </a>
+                    <em><time datetime="2015-02-04T15:13:12+01:00">19 hours ago</time></em>
+                </p>
+            </header><p>Oh, come on, Stan. Not everything ends the way you think it should. Besides, audiences love happy endings.</p>
+        </article><article class="comment"><header><p class="small"><span class="highlight">Stanley</span> commented on
+                    <a href="/18/misdirection-what-the-eyes-see-and-the-ears-hear-the-mind-believes#comment-30">
+                        Misdirection. What the eyes see and the ears hear, the mind believes
+                    </a>
+                    <em><time datetime="2015-02-04T15:13:12+01:00">19 hours ago</time></em>
+                </p>
+            </header><p>It's not gonna end like this.</p>
+        </article><article class="comment"><header><p class="small"><span class="highlight">Kate</span> commented on
+                    <a href="/17/the-pool-on-the-roof-must-have-a-leak#comment-29">
+                        The pool on the roof must have a leak
+                    </a>
+                    <em><time datetime="2011-07-25T22:28:42+02:00">1290 days ago</time></em>
+                </p>
+            </header><p>I don't DO dates. But I don't lose either, so you're on!</p>
+        </article><article class="comment"><header><p class="small"><span class="highlight">Dade</span> commented on
+                    <a href="/17/the-pool-on-the-roof-must-have-a-leak#comment-28">
+                        The pool on the roof must have a leak
+                    </a>
+                    <em><time datetime="2011-07-24T18:56:01+02:00">1291 days ago</time></em>
+                </p>
+            </header><p>Make it our first-date!</p>
+        </article><article class="comment"><header><p class="small"><span class="highlight">Kate</span> commented on
+                    <a href="/17/the-pool-on-the-roof-must-have-a-leak#comment-27">
+                        The pool on the roof must have a leak
+                    </a>
+                    <em><time datetime="2011-07-23T11:08:08+02:00">1293 days ago</time></em>
+                </p>
+            </header><p>Make it my first-born!</p>
+        </article><article class="comment"><header><p class="small"><span class="highlight">Dade</span> commented on
+                    <a href="/17/the-pool-on-the-roof-must-have-a-leak#comment-26">
+                        The pool on the roof must have a leak
+                    </a>
+                    <em><time datetime="2011-07-23T10:22:46+02:00">1293 days ago</time></em>
+                </p>
+            </header><p>And if I win?</p>
+        </article><article class="comment"><header><p class="small"><span class="highlight">Kate</span> commented on
+                    <a href="/17/the-pool-on-the-roof-must-have-a-leak#comment-25">
+                        The pool on the roof must have a leak
+                    </a>
+                    <em><time datetime="2011-07-23T06:46:08+02:00">1293 days ago</time></em>
+                </p>
+            </header><p>You wish! You'll do shitwork, scan, crack copyrights...</p>
+        </article><article class="comment"><header><p class="small"><span class="highlight">Dade</span> commented on
+                    <a href="/17/the-pool-on-the-roof-must-have-a-leak#comment-24">
+                        The pool on the roof must have a leak
+                    </a>
+                    <em><time datetime="2011-07-23T06:25:15+02:00">1293 days ago</time></em>
+                </p>
+            </header><p>Your SLAVE?</p>
+        </article></section></aside><div id="footer">
+                    Symfony2 blog tutorial - created by <a href="https://github.com/dsyph3r">dsyph3r</a>
+            </div>
+</section>
+</body>
