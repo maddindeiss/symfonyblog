@@ -8,6 +8,7 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Manager\CommentManager;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use AppBundle\Entity\Comment;
 use AppBundle\Form\CommentType;
@@ -36,7 +37,9 @@ class CommentController extends Controller
     {
         $blog = $this->getBlog($blog_id);
 
-        $comment  = new Comment();
+        $commentManager = $this->get('blog.manager.comment');
+
+        $comment  = $commentManager->create();
         $comment->setBlog($blog);
         //$request = $this->getRequest();
         $form    = $this->createForm(new CommentType(), $comment);
@@ -44,10 +47,8 @@ class CommentController extends Controller
         $form->submit($request);
 
         if ($form->isValid()) {
-            $em = $this->getDoctrine()
-                ->getManager();
-            $em->persist($comment);
-            $em->flush();
+
+            $commentManager->persist($comment);
 
             return $this->redirect($this->generateUrl('app_blog_show', array(
                     'id' => $comment->getBlog()->getId(),

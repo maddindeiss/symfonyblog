@@ -1,16 +1,4 @@
 parameters:
   # Blogger contact email address
     app.emails.contact_email: contact@email.com
-
     app.comments.latest_comment_limit: 10
-
-
-services:
-#    app.example:
-#        class: %app.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
-#        calls:
-#            - [setService, [@service_id]]
-#        tags:
-#            - { name: twig.extension }
-#            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }

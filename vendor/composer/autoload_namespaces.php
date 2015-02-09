@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'WebDriver' => array($vendorDir . '/instaclick/php-webdriver/lib'),
     'Twig_Extensions_' => array($vendorDir . '/twig/extensions/lib'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'Symfony\\' => array($vendorDir . '/symfony/symfony/src'),
@@ -16,8 +17,8 @@ return array(
     'SensioLabs\\Security' => array($vendorDir . '/sensiolabs/security-checker'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log'),
     'Incenteev\\ParameterHandler' => array($vendorDir . '/incenteev/composer-parameter-handler'),
+    'Goutte' => array($vendorDir . '/fabpot/goutte'),
     'Doctrine\\ORM\\' => array($vendorDir . '/doctrine/orm/lib'),
-    'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src'),
     'Doctrine\\DBAL\\Migrations' => array($vendorDir . '/doctrine/migrations/lib'),
     'Doctrine\\DBAL\\' => array($vendorDir . '/doctrine/dbal/lib'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
@@ -30,6 +31,11 @@ return array(
     'Doctrine\\Bundle\\MigrationsBundle' => array($vendorDir . '/doctrine/doctrine-migrations-bundle'),
     'Doctrine\\Bundle\\FixturesBundle' => array($vendorDir . '/doctrine/doctrine-fixtures-bundle'),
     'Doctrine\\Bundle\\DoctrineCacheBundle' => array($vendorDir . '/doctrine/doctrine-cache-bundle'),
+    'Behat\\Transliterator' => array($vendorDir . '/behat/transliterator/src'),
+    'Behat\\Testwork' => array($vendorDir . '/behat/behat/src'),
+    'Behat\\Symfony2Extension' => array($vendorDir . '/behat/symfony2-extension/src'),
+    'Behat\\Mink\\Driver' => array($vendorDir . '/behat/mink-selenium2-driver/src', $vendorDir . '/behat/mink-browserkit-driver/src', $vendorDir . '/behat/mink-goutte-driver/src'),
+    'Behat\\MinkExtension' => array($vendorDir . '/behat/mink-extension/src'),
     'Behat\\Gherkin' => array($vendorDir . '/behat/gherkin/src'),
     'Behat\\Behat' => array($vendorDir . '/behat/behat/src'),
     'Assetic' => array($vendorDir . '/kriswallsmith/assetic/src'),

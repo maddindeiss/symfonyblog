@@ -11,7 +11,7 @@
     {# % if app.session.flashBag.get('blogger-notice') % #}
 
         {% for flashMessage in app.session.flashbag.get('blogger-notice') %}
-            <div class="blogger-notice">
+            <div class="blogger-notice alert-success">
                 {{ flashMessage }}
             </div>
         {% endfor %}

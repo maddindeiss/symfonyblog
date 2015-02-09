@@ -1,4 +1,12 @@
-
-app/config/parameters.yml
-
+vendor
+node_modules
+/app/logs
+/app/config/parameters.yml
+/app/cache
+/web/bundles
+/web/css
+/phpunit-report
+/bin
+/app/Resources/java/yuicompressor-2.4.8.jar
 app/phpunit.xml
+
